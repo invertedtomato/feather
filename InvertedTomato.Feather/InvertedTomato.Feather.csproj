@@ -51,12 +51,6 @@
     <Compile Include="FeatherTCPOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\InvertedTomato.Common\InvertedTomato.Common.csproj">
-      <Project>{9306b15f-f6f9-44af-9b6e-f67b2a255cf5}</Project>
-      <Name>InvertedTomato.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

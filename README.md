@@ -1,12 +1,9 @@
-# InvertedTomato
-InvertedTomato is a set of libaries we use in-house to power our applications. There's some pretty cool things in here. Individual libraries are published to NuGet seperately when they reach maturity.
-
-## InvertedTomato.Feather
+# InvertedTomato.Feather
 Feather is extremely fast and lightweight network messaging socket. Kinda like WCF, without the nonsense and scolding fast speeds. Great for applications communicating over a network when webAPI is too slow or inefficient. SSL encryption is optional.
 
 Here's a chat server/client example to get you going.
 
-### Client
+## Client
 ```C#
 class Program {
     static void Main(string[] args) {
@@ -60,7 +57,7 @@ class Connection : ConnectionBase {
 }
 ```
 
-### Server
+## Server
 ```C#
 class Program {
     public static ConcurrentDictionary<EndPoint, Connection> Connections = new ConcurrentDictionary<EndPoint, Connection>();
@@ -120,22 +117,22 @@ class Connection : ConnectionBase {
 ```
 
 
-### Writing data file
+## Writing data file
 Feather can also be used to write really small data files. It's great if you need to archive data and it doesn't fit the bill for SQL. We use this to archive large volumes of data in Amazon S3.
 ```C#
 // Open file
 using (var file = FeatherFile.OpenWrite("test.dat")) {
-	for (var i = 1; i < 10000000; i++) {
-		// Create payload to write to file
-		var payload = new PayloadWriter(0)
-			.Append("This is a peice of text.") // Param #1
-			.Append(2); // Param #2
+    for (var i = 1; i < 10000000; i++) {
+        // Create payload to write to file
+        var payload = new PayloadWriter(0)
+	        .Append("This is a peice of text.") // Param #1
+	        .Append(2); // Param #2
 
-		// Write it
-		file.Write();
+        // Write it
+        file.Write();
 
-		// Repeat this as many times as you want...
-	}
+        // Repeat this as many times as you want...
+    }
 }
 ```
 
@@ -143,14 +140,15 @@ using (var file = FeatherFile.OpenWrite("test.dat")) {
 ```C#
 // Open file
 using (var file = FeatherFile.OpenRead("test.dat")) {
-	// Iterate through each record
+    // Iterate through each record
     PayloadReader payload;
     while ((payload = file.Read()) != null) {
         // Read parameters (must be in the same order they were written!)
-		var param1 = payload.ReadString(); // Param #1
+        var param1 = payload.ReadString(); // Param #1
         var param2 = payload.ReadInt32(); // Param #2
 
-		// Do whatever with the data
+        // Do whatever with the data
+        // ...
     }
 }
 ```
