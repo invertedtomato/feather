@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B7EF2548-2D3D-4E8B-9CB7-75B8177EE1CB}</ProjectGuid>
+    <ProjectGuid>{D9C64A73-FE88-4A43-BA92-2E67CCA4D109}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InvertedTomato.IO.Feather.TestClient</RootNamespace>
-    <AssemblyName>InvertedTomato.IO.Feather.TestClient</AssemblyName>
+    <RootNamespace>InvertedTomato.IO.Feather.TestServer</RootNamespace>
+    <AssemblyName>InvertedTomato.IO.Feather.TestServer</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,9 +46,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InvertedTomato.IO.Feather\InvertedTomato.IO.Feather.csproj">
+    <ProjectReference Include="..\Libary\Library.csproj">
       <Project>{332b7bda-de97-4f10-af97-238ec50b0196}</Project>
-      <Name>InvertedTomato.IO.Feather</Name>
+      <Name>Library</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
