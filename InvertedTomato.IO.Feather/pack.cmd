@@ -1,3 +1,3 @@
 @echo off
-nuget pack InvertedTomato.Feather.csproj  -IncludeReferencedProjects
+nuget pack InvertedTomato.IO.Feather.csproj  -IncludeReferencedProjects
 pause
