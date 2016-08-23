@@ -25,7 +25,7 @@ namespace InvertedTomato.IO.Feather {
         public TimeSpan KeepAliveInterval { get; set; } = TimeSpan.FromSeconds(10); // ms;
 
         /// <summary>
-        /// Use the application-level keep-alive option instead of the standard TCP keep-alive. This works around buggy TCP implimentations on some remote devices.
+        /// Use the application-level keep-alive option instead of the standard TCP keep-alive. This works around buggy TCP implementations on some remote devices.
         /// </summary>
         public bool ApplicationLayerKeepAlive { get; set; } = false;
 

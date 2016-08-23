@@ -51,7 +51,6 @@
     <Compile Include="IPayload.cs" />
     <Compile Include="PayloadReader.cs" />
     <Compile Include="PayloadWriter.cs" />
-    <Compile Include="Feather.cs" />
     <Compile Include="FeatherTCPOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
