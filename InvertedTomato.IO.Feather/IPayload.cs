@@ -6,7 +6,4 @@ namespace InvertedTomato.IO.Feather {
 
         byte[] ToByteArray();
     }
-
-    [Obsolete("Change to reference IPayload instead. Payload will be removed in a future release.")]
-    public interface Payload : IPayload { }
 }

@@ -48,7 +48,7 @@
     <Compile Include="FileWriter.cs" />
     <Compile Include="FeatherFileOptions.cs" />
     <Compile Include="FileReader.cs" />
-    <Compile Include="Payload.cs" />
+    <Compile Include="IPayload.cs" />
     <Compile Include="PayloadReader.cs" />
     <Compile Include="PayloadWriter.cs" />
     <Compile Include="Feather.cs" />
