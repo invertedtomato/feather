@@ -146,7 +146,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 
 		[TestMethod]
 		public void ReadNullableInt16() {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableInt16());
 		}
 
@@ -164,7 +164,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 
 		[TestMethod]
 		public void ReadNullableUInt16() {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableUInt16());
 		}
 
@@ -200,7 +200,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 
 		[TestMethod]
 		public void ReadNullableUInt32() {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableUInt32());
 		}
 
@@ -217,8 +217,8 @@ namespace InvertedTomato.IO.Feather.Tests {
 		}
 
 		[TestMethod]
-		public void ReadNullableInt64 () {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+		public void ReadNullableInt64() {
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableInt64());
 		}
 
@@ -236,7 +236,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 
 		[TestMethod]
 		public void ReadNullableUInt64() {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableUInt64());
 		}
 
@@ -254,7 +254,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 
 		[TestMethod]
 		public void ReadNullableFloat() {
-			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00  });
+			var payload = new PayloadReader(new byte[] { 0x00, 0x00, 0x00 });
 			Assert.AreEqual(null, payload.ReadNullableFloat());
 		}
 
@@ -284,12 +284,12 @@ namespace InvertedTomato.IO.Feather.Tests {
 			var payload = new PayloadReader(value.ToByteArray());
 			Assert.AreEqual(arr, payload.ReadNullableByteArray());
 		}
-		
+
 
 		[TestMethod]
-		public void ReadByteArrayFixedLength() { 
-			var payload = new PayloadReader(new byte[] { 0x00,0x01, 0x02, 0x03, 0x04, 0x01, 0x01, 0x01, 0x02, 0x01, 0x01, 0x06, 0x01, 0x01, 0x09, 0x01, 0x01 });
-			 
+		public void ReadByteArrayFixedLength() {
+			var payload = new PayloadReader(new byte[] { 0x00, 0x01, 0x02, 0x03, 0x04, 0x01, 0x01, 0x01, 0x02, 0x01, 0x01, 0x06, 0x01, 0x01, 0x09, 0x01, 0x01 });
+
 			Assert.AreEqual("01-02-03-04-01-01-01-02-01-01-06-01-01-09-01-01", BitConverter.ToString(payload.ReadByteArrayFixedLength(16)));
 		}
 
