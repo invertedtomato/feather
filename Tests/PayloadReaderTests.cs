@@ -76,7 +76,7 @@ namespace InvertedTomato.IO.Feather.Tests {
 			Assert.AreEqual(true, payload.ReadBoolean());
 		}
 
-		// TODO Boolean []
+		// TODO Boolean []       
 
 		[TestMethod]
 		public void ReadIPAddress() {
