@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("InvertedTomato.IO.Feather")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Feather is extremely fast and lightweight network messaging socket. Kinda like WCF, without the nonsense and scolding fast speeds. Great for applications communicating over a network when webAPI is too slow or inefficient. SSL encryption is optional.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InvertedTomato.IO.Feather")]
