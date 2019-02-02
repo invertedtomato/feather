@@ -1,4 +1,9 @@
 # InvertedTomato.Feather
+
+## Feather2
+There's a newer version of Feather available. Feather2 is completely redesigned to be easier to use, more performant, and supports UDP. It's probably a better fit for your needs. [Check it out here.](https://github.com/invertedtomato/feather2)
+
+## Introduction
 Feather is extremely fast and lightweight network messaging socket. Kinda like WCF, without the nonsense and scolding fast speeds. Great for applications communicating over a network when webAPI is too slow or inefficient. SSL encryption is optional.
 
 Here's a chat server/client example to get you going.
@@ -115,7 +120,6 @@ class Connection : ConnectionBase {
     }
 }
 ```
-
 
 ## Writing data file
 Feather can also be used to write really small data files. It's great if you need to archive data and it doesn't fit the bill for SQL. We use this to archive large volumes of data in Amazon S3.
