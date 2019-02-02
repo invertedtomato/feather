@@ -1,7 +1,9 @@
 # InvertedTomato.Feather
 
 ## Feather2
-There's a newer version of Feather available. Feather2 is completely redesigned to be easier to use, more performant, and supports UDP. It's probably a better fit for your needs. [Check it out here.](https://github.com/invertedtomato/feather2)
+Feather2 is out! It's been redesigned and rebuilt from the ground up to be easier to use, have better performance and to support UDP. It's also built on .NET Standard, so you'll be able to use it in your .NET Core applications. [Check it out here.](https://github.com/invertedtomato/feather2)
+
+Read on if you really are interested in the old Feather1.
 
 ## Introduction
 Feather is extremely fast and lightweight network messaging socket. Kinda like WCF, without the nonsense and scolding fast speeds. Great for applications communicating over a network when webAPI is too slow or inefficient. SSL encryption is optional.
